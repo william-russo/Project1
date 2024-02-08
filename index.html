@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>William Russo's Profile Page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="mycss_web.css">
+		<link rel="stylesheet" href="mycss_tablet.css" media="max-width:768px">
+		<style>
+			h1.name{
+				text-align:center;
+			}
+		</style>
 	</head>
 	<body>
 		<div id="bio">
-			<h1>William Russo</h1>
-			<p>Major: Computer Science<p>
-			<img src="profile pic.jpg" width=25%>
+			<h1 class="name">William Russo</h1>
+			<p style="text-align:center">Major: Computer Science<p>
+			<img src="profile pic.jpg" class="propic" width=25%>
 		</div>
 		<hr>
 		<div id="education">
@@ -43,11 +52,11 @@
 		</div>
 		<hr>
 		<div id="fav">
-			<h1>Favorite Song</h1>
+			<h1 class="centered">Favorite Song</h1>
 			<iframe src="https://open.spotify.com/embed/track/5Z01UMMf7V1o0MzF86s6WJ?utm_source=generator" width="560" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-			<h1>Favorite Movie</h1>
+			<h1 class="centered">Favorite Movie</h1>
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/vuuqKfz_SeU?si=HD68pPjTk9o9VmKy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-			<h1>Favorite TV Show</h1>
+			<h1 class="centered">Favorite TV Show</h1>
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/a7RoP1LKMeM?si=F4t5qQAPJvyl7Suv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 		</div>
 		<hr>
@@ -79,6 +88,7 @@
 			<h1>My Projects</h1>
 			<ul>
 				<li><a href="Project1_Milestone_01_Description.pdf" target="_blank">Project Milestone 1</a></li>
+				<li><a href="02_Project_Description.pdf" target="_blank">Project Milestone 1</a></li>
 			</ul>
 		</div>
 	</body>
