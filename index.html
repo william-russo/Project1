@@ -4,27 +4,29 @@
 		<title>William Russo's Profile Page</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="mycss_web.css">
-		<link rel="stylesheet" href="mycss_tablet.css" media="max-width:768px">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 		<style>
-			h1.name{
-				text-align:center;
+			h1{
+				color:red;
 			}
 		</style>
 	</head>
 	<body>
-		<div id="bio">
-			<h1 class="name">William Russo</h1>
-			<p style="text-align:center">Major: Computer Science<p>
-			<img src="profile pic.jpg" class="propic" width=25%>
+		<div class="container my-3 p-3" id="bio">
+			<h1>William Russo</h1>
+			<p>Major: Computer Science<p>
+			<img src="IMG_2907.jpeg" width="35%" alt="profile pic" class="img-thumbnail">
 		</div>
 		<hr>
-		<div id="education">
+		<div class="container my-3 p-3" id="education">
 			<h1>Education</h1>
 			<p>I am a senior at St. John's University. I am pursuing a B.S. degree in Computer Science.</p>
 		</div>
 		<hr>
-		<div id="work">
+		<div class="container my-3 p-3" id="work">
 			<h1>Work Experience</h1>
 			<ul>
 				<li>Dockhand at Safe Harbor Capri Marina</li>
@@ -35,7 +37,7 @@
 			</ul>
 		</div>
 		<hr>
-		<div id="programming">
+		<div class="container my-3 p-3" id="programming">
 			<h1>Programming Skills</h1>
 			<ul>
 				<li>Java (most experience)</li>
@@ -46,21 +48,29 @@
 			</ul>
 		</div>
 		<hr>
-		<div id="hobbies">
+		<div class="container my-3 p-3" id="hobbies">
 			<h1>Hobbies</h1>
 			<p>My hobbies mostly have to do with outdoor adventures. I love to ski and mountain climb. I also love to travel, either for site seeing historical places or to places to ski and hike.</p> 
 		</div>
 		<hr>
-		<div id="fav">
-			<h1 class="centered">Favorite Song</h1>
-			<iframe src="https://open.spotify.com/embed/track/5Z01UMMf7V1o0MzF86s6WJ?utm_source=generator" width="560" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-			<h1 class="centered">Favorite Movie</h1>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/vuuqKfz_SeU?si=HD68pPjTk9o9VmKy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-			<h1 class="centered">Favorite TV Show</h1>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/a7RoP1LKMeM?si=F4t5qQAPJvyl7Suv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		<div class="container my-3 p-3" id="fav">
+			<div class="row">
+				<div class="col">
+					<h1>Favorite Song</h1>
+					<iframe src="https://open.spotify.com/embed/track/5Z01UMMf7V1o0MzF86s6WJ?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+				</div>
+				<div class="col">
+					<h1>Favorite Movie</h1>
+					<iframe src="https://www.youtube.com/embed/vuuqKfz_SeU?si=HD68pPjTk9o9VmKy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+				<div class="col">
+					<h1>Favorite TV Show</h1>
+					<iframe src="https://www.youtube.com/embed/a7RoP1LKMeM?si=F4t5qQAPJvyl7Suv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
 		</div>
 		<hr>
-		<div id="websites">
+		<div class="container my-3 p-3" id="websites">
 			<h1>Favorite Websites</h1>
 			<ul>
 				<li><a href="https://www.freecodecamp.org" target="_blank">Free Code Camp</a><span> is a great website to learn coding.<span></li>
@@ -69,27 +79,28 @@
 			</ul>
 		</div>
 		<hr>
-		<div>
-			<h1>Menu</h1>
-			<nav>
-				<ul>
-					<li><a href="#bio">Bio</a></li>
-					<li><a href="#education">Education</a></li>
-					<li><a href="#work">Work Experience</a></li>
-					<li><a href="#programming">Programming Skills</a></li>
-					<li><a href="#hobbies">Hobbies</a></li>
-					<li><a href="#fav">Favorite Song/Movie/TV</a></li>
-					<li><a href="#websites">Favorite Websites</a></li>
-				</ul>
-			</nav>
-		</div>
-		<hr>
-		<div>
+		<div class="container my-3 p-3">
 			<h1>My Projects</h1>
 			<ul>
 				<li><a href="Project1_Milestone_01_Description.pdf" target="_blank">Project Milestone 1</a></li>
-				<li><a href="02_Project_Description.pdf" target="_blank">Project Milestone 1</a></li>
+				<li><a href="02_Project_Description.pdf" target="_blank">Project Milestone 2</a></li>
+				<li><a href="03_ProblemSet1_03.pdf" target="_blank">Project Milestone 3</a></li>
 			</ul>
+		</div>
+		<hr>
+		<div class="container card-footer my-3 p-3">
+			<h1>Menu</h1>
+			<nav>
+				<ul class="nav">
+					<li class="nav-link"><a href="#bio">Bio</a></li>
+					<li class="nav-link"><a href="#education">Education</a></li>
+					<li class="nav-link"><a href="#work">Work Experience</a></li>
+					<li class="nav-link"><a href="#programming">Programming Skills</a></li>
+					<li class="nav-link"><a href="#hobbies">Hobbies</a></li>
+					<li class="nav-link"><a href="#fav">Favorite Song/Movie/TV</a></li>
+					<li class="nav-link"><a href="#websites">Favorite Websites</a></li>
+				</ul>
+			</nav>
 		</div>
 	</body>
 </html>
